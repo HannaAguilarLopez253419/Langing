@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hanna · Desarrolladora front-end</title>
+  <meta name="description" content="Portafolio de Hanna: proyectos, herramientas y blog sobre desarrollo front-end y diseño.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#inicio">Hanna</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+      <nav id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acerca">Acerca de mí</a></li>
+          <li><a href="#herramientas">Herramientas</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cada sección vive en su propio archivo dentro de /sections y se carga aquí -->
+  <main>
+    <section id="inicio"       class="section hero"     data-include="sections/inicio.html"></section>
+    <section id="acerca"       class="section about"    data-include="sections/acerca.html"></section>
+    <section id="herramientas" class="section tools"    data-include="sections/herramientas.html"></section>
+    <section id="proyectos"    class="section projects" data-include="sections/proyectos.html"></section>
+    <section id="blog"         class="section blog"     data-include="sections/blog.html"></section>
+    <section id="contacto"     class="section contact"  data-include="sections/contacto.html"></section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Hanna. Hecho a mano con HTML, CSS y JavaScript.</p>
+    <a href="#inicio">Volver arriba</a>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

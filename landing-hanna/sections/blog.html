@@ -1,0 +1,158 @@
+<div class="container">
+  <h2>Blog</h2>
+  <p class="section-intro">Lo que voy aprendiendo sobre desarrollo front-end, explicado corto y sin rodeos.</p>
+
+  <article class="featured">
+    <div>
+      <span class="tag">CSS</span>
+      <h3>Grid o Flexbox: cuál usar</h3>
+      <p>Flexbox acomoda elementos en una sola dirección; Grid, en dos. Para una galería que se adapta sola a cualquier pantalla, una línea de Grid basta.</p>
+    </div>
+    <pre class="code" aria-label="Ejemplo de CSS Grid"><code>.galeria {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}</code></pre>
+  </article>
+
+  <div class="posts">
+    <article class="post a-violet">
+      <span class="tag">HTML</span>
+      <h3>HTML semántico</h3>
+      <p>Usar header, nav, main y article en lugar de divs para todo ayuda a los lectores de pantalla y a que Google entienda tu página.</p>
+    </article>
+    <article class="post a-pink">
+      <span class="tag">Responsivo</span>
+      <h3>Mobile first</h3>
+      <p>Empezar por la pantalla pequeña te obliga a decidir qué es importante. Después, crecer a tablet y escritorio es agregar espacio.</p>
+    </article>
+    <article class="post a-amber">
+      <span class="tag">JavaScript</span>
+      <h3>JavaScript que se lee solo</h3>
+      <p>Nombres claros, funciones pequeñas y un solo trabajo por función. El código que entiendes en seis meses es el que vale la pena.</p>
+    </article>
+    <article class="post a-mint">
+      <span class="tag">Accesibilidad</span>
+      <h3>Que todas puedan usarlo</h3>
+      <p>Buen contraste, foco visible al navegar con teclado y texto alternativo en las imágenes. Mejoran la experiencia de todos, no solo de unos pocos.</p>
+    </article>
+    <article class="post a-blue">
+      <span class="tag">Rendimiento</span>
+      <h3>Una página rápida se siente mejor</h3>
+      <p>Imágenes en el tamaño justo, carga diferida y menos scripts. Si la página tarda, la gente se va antes de ver tu diseño.</p>
+    </article>
+    <article class="post a-coral">
+      <span class="tag">UI y UX</span>
+      <h3>Lo que se ve y lo que se siente</h3>
+      <p>La UI es lo que ves: botones, colores, tipografía. La UX es cómo se siente usarla. Una pantalla bonita que confunde falla igual.</p>
+    </article>
+  </div>
+
+  <h3 class="works-title">Mis trabajos</h3>
+  <div class="works">
+    <!-- Cambia las imágenes en assets/img/ (trabajo-1.jpg, trabajo-2.jpg, trabajo-3.jpg) y el texto de cada card -->
+    <article class="work">
+      <figure class="ph" data-label="Imagen 1">
+        <img src="/landing-hanna/img/disenio1.png" alt="Captura del primer trabajo" width="800" height="500" loading="lazy" onerror="this.remove()">
+      </figure>
+      <h4>Diseño en figma </h4>
+      <p>Diseño en figma de una negocio de tatuajes</p>
+    </article>
+    <article class="work">
+      <figure class="ph" data-label="Imagen 2">
+        <img src="/landing-hanna/img/diseño2.png" alt="Captura del segundo trabajo" width="800" height="500" loading="lazy" onerror="this.remove()">
+      </figure>
+      <h4>Diseño de pagina web de peliculas</h4>
+      <p>Se trabajo en figma para sacar una pagina web de peliculas</p>
+    </article>
+    <article class="work">
+      <figure class="ph" data-label="Imagen 3">
+        <img src="/landing-hanna/img/diseño3.png" alt="Captura del tercer trabajo" width="800" height="500" loading="lazy" onerror="this.remove()">
+      </figure>
+      <h4>Diseño de moludos </h4>
+      <p>Se empezo a diseñar en figa por modulos, el proyecto de funlish</p>
+    </article>
+  </div>
+</div>
+<!-- Técnicas de diseño y Figma: pégalo justo después del cierre de <div class="works"> y antes del último </div> -->
+  <article class="design-guide">
+    <h3 class="guide-title">Técnicas de diseño y cómo llevarlas al código</h3>
+    <p class="guide-intro">Un buen diseño no depende de la inspiración: se apoya en unas cuantas reglas sencillas. Estas son las que más uso y la forma de pasarlas a una página real.</p>
+
+    <div class="technique">
+      <h4>Jerarquía visual</h4>
+      <div>
+        <p><strong>Qué es.</strong> Guiar la mirada con tamaño, peso y color para que lo más importante se vea primero.</p>
+        <p><strong>Cómo aplicarla.</strong> Un título grande por sección, texto de apoyo más pequeño y un solo botón principal por pantalla. En la página se logra con una escala de tamaños de letra y con el grosor del texto.</p>
+      </div>
+    </div>
+
+    <div class="technique">
+      <h4>Espaciado consistente</h4>
+      <div>
+        <p><strong>Qué es.</strong> Usar siempre medidas que salgan de una misma base, por ejemplo múltiplos de 8, en lugar de números al azar.</p>
+        <p><strong>Cómo aplicarla.</strong> Define una escala corta (8, 16, 24, 32, 48) y úsala para todos los márgenes y rellenos. Guardarla como variables hace que cambiar el ritmo de toda la página tome segundos.</p>
+      </div>
+    </div>
+
+    <div class="technique">
+      <h4>Paleta 60-30-10</h4>
+      <div>
+        <p><strong>Qué es.</strong> Repartir el color: 60% un tono neutro de fondo, 30% un color secundario y 10% un acento.</p>
+        <p><strong>Cómo aplicarla.</strong> Reserva el acento para lo que quieres que la gente toque, como botones y enlaces. Revisa siempre que el texto tenga buen contraste con su fondo.</p>
+      </div>
+    </div>
+
+    <div class="technique">
+      <h4>Tipografía con escala</h4>
+      <div>
+        <p><strong>Qué es.</strong> Elegir pocos tamaños que se relacionen entre sí, en vez de inventar uno nuevo cada vez.</p>
+        <p><strong>Cómo aplicarla.</strong> Máximo dos familias de letra, un interlineado cómodo en textos largos y líneas de entre 60 y 80 caracteres para que se lean sin cansar.</p>
+      </div>
+    </div>
+
+    <div class="technique">
+      <h4>Cuadrícula y alineación</h4>
+      <div>
+        <p><strong>Qué es.</strong> Apoyarse en columnas invisibles para que todo quede alineado y se vea ordenado.</p>
+        <p><strong>Cómo aplicarla.</strong> Por ejemplo, doce columnas en escritorio y cuatro en celular. En la página se traduce a una cuadrícula con Grid, que reacomoda el contenido según el ancho de la pantalla.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="figma-guide">
+    <h3 class="guide-title">Figma: del diseño a la página</h3>
+    <p>Figma es donde la idea toma forma antes de escribir código. Diseñar ahí primero ahorra tiempo, porque cambiar un botón de lugar en un lienzo es mucho más rápido que reescribir una página. Lo mejor es que casi cada herramienta de Figma tiene su equivalente en la web.</p>
+
+    <div class="pairs">
+      <div class="pair">
+        <div class="pair-from"><span>En Figma</span><strong>Auto layout</strong></div>
+        <div class="pair-to"><span>En la página</span><strong>Flexbox</strong><p>Los elementos se acomodan en fila o columna con espacio entre ellos, igual que en el diseño.</p></div>
+      </div>
+      <div class="pair">
+        <div class="pair-from"><span>En Figma</span><strong>Frames de celular, tablet y escritorio</strong></div>
+        <div class="pair-to"><span>En la página</span><strong>Diseño responsivo</strong><p>Diseñar los tres tamaños te deja ver cómo cambia todo antes de programarlo.</p></div>
+      </div>
+      <div class="pair">
+        <div class="pair-from"><span>En Figma</span><strong>Estilos y variables</strong></div>
+        <div class="pair-to"><span>En la página</span><strong>Variables de CSS</strong><p>Los colores y las letras se definen una vez y se reutilizan en todo el sitio.</p></div>
+      </div>
+      <div class="pair">
+        <div class="pair-from"><span>En Figma</span><strong>Componentes</strong></div>
+        <div class="pair-to"><span>En la página</span><strong>Piezas reutilizables</strong><p>Un botón o una tarjeta se diseña una vez y se usa en todas partes con el mismo aspecto.</p></div>
+      </div>
+      <div class="pair">
+        <div class="pair-from"><span>En Figma</span><strong>Dev Mode</strong></div>
+        <div class="pair-to"><span>En la página</span><strong>Medidas exactas</strong><p>Permite revisar espacios, colores y tamaños del diseño sin tener que adivinar.</p></div>
+      </div>
+    </div>
+
+    <h4 class="flow-title">Mi forma de pasar de Figma a código</h4>
+    <ol class="flow">
+      <li>Diseño primero la versión de celular.</li>
+      <li>Defino colores, letras y espacios como estilos.</li>
+      <li>Armo los componentes que se repiten.</li>
+      <li>Reviso medidas en Dev Mode y lo paso al código.</li>
+    </ol>
+  </article>
